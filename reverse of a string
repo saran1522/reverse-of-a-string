@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+// ********reverse the given string***********
+int main(){
+    char a[20];
+    int n=0;
+    cout<<"enter the input"<<endl;
+    cin.getline(a, 20);
+    for (int i = 0; a[i]!='\0'; i++)
+    {
+        n++;
+    }
+     int i=0, j=n-1;
+     while (i<j)
+     {
+         int temp=a[i];
+          
+         a[i]=a[j];
+         a[j]=temp;
+         i++;
+         j--;
+     }
+     
+    cout<<a;
+    return 0;
+}
